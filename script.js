@@ -9,11 +9,6 @@ yesBtn.addEventListener('click', () => {
 
 // NO button - reload the page (forcing them to choose again)
 noBtn.addEventListener('click', () => {
-    // Add a little shake animation before reloading
-    noBtn.style.animation = 'shake 0.5s';
-    
-    // Reload after a short delay to show the animation
-    setTimeout(() => {
-        window.location.reload();
-    }, 500);
+    // Go to the "are you sure?" page
+    window.location.href = 'no.html';
 });
